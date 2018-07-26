@@ -1,2 +1,4 @@
 # data_cleaning
-gather data from excel, remove duplicates and cross ref 
+-gather data from excel 
+-remove duplicates 
+-data cross ref 
