@@ -2,7 +2,7 @@ import openpyxl
 import sys
 
 ##load file
-wb = openpyxl.load_workbook('/Users/alaragebes/Desktop/solar_data/STATES/Wisconsin.xlsx')
+wb = openpyxl.load_workbook('###')
 change = wb['Cross-Ref']
 sheet = wb['Sheet1']
 ru = sheet.max_row
@@ -45,7 +45,7 @@ print "the number of new companies: %r" %(len(call_list))
 change.cell(row=1, column=8).value = 'Call List'
 change.cell(row=1, column=9).value = 'URL'
 change.cell(row=1, column=10).value = 'Phone'
-wb.save('/Users/alaragebes/Desktop/solar_data/STATES/Wisconsin.xlsx')
+wb.save('###')
 
 
 
@@ -55,4 +55,4 @@ for i in range(2, (len(call_list)+2)):
         if change_name(sheet.cell(row=num, column=1).value) == call_list[i-2]:
             change.cell(row=i, column=9).value = sheet.cell(row=num, column=6).value
             change.cell(row=i, column=10).value = sheet.cell(row=num, column=7).value
-            wb.save('/Users/alaragebes/Desktop/solar_data/STATES/Wisconsin.xlsx')
+            wb.save('###')
