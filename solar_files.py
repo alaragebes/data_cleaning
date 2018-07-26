@@ -53,7 +53,7 @@ def add_names_to_file (file, sheetname, rows, col, lists):
             sample.cell(row=1, column=col).value = "Customer"
         for i in range(2, rows+2):
             sample.cell(row=i, column=col).value = list_names[i-2]
-        file.save('/Users/alaragebes/Desktop/solar_data/STATES/Louisiana.xlsx')
+        file.save('###')
     else:
         print "Creating new sheet %s" %(sheetname)
         file.create_sheet(sheetname)
@@ -61,7 +61,7 @@ def add_names_to_file (file, sheetname, rows, col, lists):
         sample.cell(row=1, column=col).value = "Yelp"
         for i in range(2, rows+2):
             sample.cell(row=i, column=col).value = list_names[i-2]
-        file.save('/Users/alaragebes/Desktop/solar_data/STATES/Louisiana.xlsx')
+        file.save('###')
     print "Changes have been saved :)"
 
 
