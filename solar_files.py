@@ -1,10 +1,10 @@
 import openpyxl
 import sys
 
-wb = openpyxl.load_workbook('/Users/alaragebes/Desktop/solar_data/STATES/Louisiana.xlsx')
-account = openpyxl.load_workbook('/Users/alaragebes/Desktop/solar_data/CS_Account&ContactList__2018-07-09 (1).xlsx')
-customer = openpyxl.load_workbook('/Users/alaragebes/Desktop/solar_data/Shipments for Kerim 2016-2018 copy.xlsx')
-zoho = openpyxl.load_workbook('/Users/alaragebes/Desktop/solar_data/Zoho Customer List (Accounts that Ordered).xlsx')
+wb = openpyxl.load_workbook('###')
+account = openpyxl.load_workbook('###')
+customer = openpyxl.load_workbook('###')
+zoho = openpyxl.load_workbook('###')
 
 print wb.sheetnames
 web = wb['Sheet1']
